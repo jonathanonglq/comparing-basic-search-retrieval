@@ -199,12 +199,6 @@ Hybrid retrieval performed best on the main quality metrics, especially `recall@
 
 BM25 was much faster in this local implementation. Dense and hybrid retrieval both include query embedding cost, and dense similarity search is brute force. We note that these timings are useful for comparing this local setup, but are not production latency claims.
 
-Generated reports:
-
-- [Summary](runs/scifact/summary.md)
-- [Failure report](runs/scifact/failure_report.md)
-- [Analysis notes](runs/scifact/analysis.md)
-
 ### 7. Inspects Failure Cases
 
 Aggregate metrics are useful, but they hide the actual reasons methods differ. The failure inspection script compares BM25, dense, and hybrid results query by query. This was implemented in ```src/analysis/inspect_failures.py```, with the detailed report in ```runs/scifact/failure_report.md```.
@@ -275,3 +269,9 @@ Inspect failures:
 ```bash
 python -m src.analysis.inspect_failures --dataset scifact --top-k 10
 ```
+
+Generated reports:
+
+- [Summary](runs/scifact/summary.md)
+- [Failure report](runs/scifact/failure_report.md)
+- [Analysis notes](runs/scifact/analysis.md)
