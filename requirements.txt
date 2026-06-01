@@ -1,0 +1,6 @@
+numpy
+rank-bm25
+requests
+sentence-transformers
+scikit-learn
+tqdm

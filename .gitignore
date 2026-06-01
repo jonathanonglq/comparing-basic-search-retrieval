@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local/env config
+.env
+.env.*
+.DS_Store
+
+# Downloaded datasets and processed corpora
+data/raw/
+data/processed/
+
+# Generated machine-readable run artifacts
+runs/**/results.jsonl
+runs/**/*.json
+runs/**/*.npy
+
+# Local caches
+.cache/
