@@ -28,3 +28,6 @@ runs/**/*.npy
 
 # Local caches
 .cache/
+
+# Local planning/spec docs
+docs/
